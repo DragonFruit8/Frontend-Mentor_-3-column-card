@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 15px;
+    width: 100%;
+    height: 100%;
+}
+.card-type{
+    max-width: 1440px;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+.card{
+    width: 350px;
+    min-height: 60vh;
+    padding: 50px 40px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+}
+.card h1{
+    font-family:'Lexend Deca', serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.sedan{
+    background-color: hsl(31, 77%, 52%);
+}
+.suv{
+    background-color: hsl(184, 100%, 22%);
+}
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+}
+.card img{
+    width: 75px;
+}
+.card p, a{
+    font-family:'Lexend Deca', sans-serif;
+    font-size: .9rem;
+    font-weight: 100;
+    line-height: 1.5rem;
+}
+.cta {
+    display: inline-block;
+    padding: 10px 30px;
+    border: 2px solid white;
+    border-radius: 20px;
+    margin: 20px auto 0 0;
+    text-decoration: none;
+    color: white;
+    transition: background-color .25s ease-in-out;
+}
+.cta:hover{
+    background-color: white;
+    mix-blend-mode: screen;
+    color: black;
+    animation: slideIn 1s ease-in;
+}
+.attribution{
+    padding: 10px 0;
+    font-size: 11px;
+    text-align: center;
+}
+@media only screen and (max-width:800px){
+    .card-type{
+        display: flex;
+        height: auto;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .card-type .card{
+        max-width: 300px;
+    }
+}
